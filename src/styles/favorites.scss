@@ -43,27 +43,22 @@
 }
 
 .favorites__items {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 3.4rem 1.942%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.4rem 2.4rem;
 }
 
 .favorites__item {
-  --item-size: 27.5vw;
-  --max-item-size: 39.6rem;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: var(--item-size);
-  max-width: var(--max-item-size);
+  width: 100%;
 }
 
 .favorites__item__main {
   width: 100%;
-  max-height: var(--max-item-size);
-  height: var(--item-size);
+  aspect-ratio: 1/1;
+  max-height: 39.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,4 +132,10 @@
   line-height: 1.43em;
   letter-spacing: .04rem;
   color: var(--dark-gray);
+}
+
+@media(max-width: 1440px) {
+  .favorites__items {
+    grid-template-columns: repeat(3, 1fr);
+  }  
 }
