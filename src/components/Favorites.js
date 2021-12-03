@@ -117,10 +117,16 @@ export default function Favorites() {
                     style={{backgroundImage: `url(${el.img})`}}
                     className="favorites__item__main"
                   >
-                    <a href="/">
+                    <a
+                      href="/"
+                      className='big-button'
+                    >
                       shop men
                     </a>
-                    <a href="/">
+                    <a
+                      href="/"
+                      className='big-button'
+                    >
                       shop women
                     </a>
                   </div>

@@ -12,4 +12,29 @@ h2 {
   letter-spacing: .05rem;
   text-align: center;
   color: var(--dark-gray);
+  text-transform: capitalize;
+}
+
+p {
+  font-weight: 400;
+  color: var(--dark-gray);
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  letter-spacing: .05rem;
+}
+
+.big-button {
+  --button-background: var(--dark-gray);
+  --button-color: var(--white);
+
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.172em;
+  padding: 1.7rem 3.2rem 1.5rem;
+  color: var(--button-color);
+  background-color: var(--button-background);
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  border-radius: .2rem;
+  text-align: center;
 }
