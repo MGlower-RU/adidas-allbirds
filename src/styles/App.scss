@@ -37,4 +37,10 @@ p {
   letter-spacing: .2rem;
   border-radius: .2rem;
   text-align: center;
+  cursor: pointer;
+  transition: filter .34s ease-in-out;
+
+  &:hover {
+    filter: invert(.1);
+  }
 }
